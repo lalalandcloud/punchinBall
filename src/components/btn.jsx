@@ -1,11 +1,9 @@
 import './btn.css'
-import './imgs.jsx'
-import './progressB.jsx'
 
 function Btn() {
-    
+
     return(
-        <div>
+        <div id='divBtn'>
             <button>PUNCH</button>
         </div>
     )

@@ -4,6 +4,7 @@ import {bagBurst} from "../assets/img/bag-burst.png";
 
 
 function Imgs(){
+    
 
     return(
         <div>

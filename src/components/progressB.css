@@ -1,9 +1,11 @@
-#barreVie{
+#barreVie {
     background-color: black;
     height: 60px;
     width: 300px;
+    display: flex;
 }
-#1{
+.un {
     background-color: brown;
     width: 10%;
+    height: 100%;
 }
