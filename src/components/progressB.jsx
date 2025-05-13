@@ -1,25 +1,21 @@
 import './progressB.css'
-import { useState } from 'react'
 
-function ProgressB(){
 
-    const [barVie, setBarVie] = useState(100)
-    const punch10 = () => {
-    setBarVie(Math.max(barVie -10,0))
+function ProgressB({barVie}){
+    const blocs = [];
+    for (let i = 0; i < 10; i++){
+        if (i < barVie/10){
+            blocs.push(<div key = {i} className='life-block active'></div>);
+        }
+        else{
+            blocs.push(<div key={i} className='life-block'></div>);
+        }
     }
+
 
     return (
         <div id='barreVie'>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
-            <div className="un"></div>
+            {blocs}
         </div>
     )
 }

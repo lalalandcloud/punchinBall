@@ -1,11 +1,15 @@
 #barreVie {
-    background-color: black;
-    height: 60px;
-    width: 300px;
     display: flex;
+    gap: 5px;
+    justify-self: center;
 }
-.un {
+
+.life-block.active{
     background-color: brown;
-    width: 10%;
-    height: 100%;
+}
+
+.life-block{
+    width: 50px;
+    height: 50px;
+    background-color: beige;
 }
