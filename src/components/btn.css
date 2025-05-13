@@ -1,0 +1,9 @@
+#divBtn{
+    display: flex;
+    justify-self: center;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
