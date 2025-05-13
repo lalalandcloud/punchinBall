@@ -13,7 +13,6 @@ function Btn({barVie, setBarVie}) {
     };
     return(
         <div id='divBtn'>
-
             <button onClick={punch10}>{barVie === 0 ? "Rejouer" : "PUNCH"}</button>
         </div>
     )
