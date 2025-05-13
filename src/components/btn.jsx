@@ -3,13 +3,18 @@ import './btn.css'
 function Btn({barVie, setBarVie}) {
 
     const punch10 = () => {
-        setBarVie(Math.max(barVie -10,0));
-        console.log(`cav`);
-    };
 
+        if(barVie === 0){
+            setBarVie(100)
+        }
+        else{
+            setBarVie(Math.max(barVie -10,0));
+        }
+    };
     return(
         <div id='divBtn'>
-            <button onClick={punch10}>PUNCH</button>
+
+            <button onClick={punch10}>{barVie === 0 ? "Rejouer" : "PUNCH"}</button>
         </div>
     )
 }
