@@ -6,4 +6,18 @@ button{
     width: 70px;
     height: 70px;
     border-radius: 50px;
+    background-color: rgba(165, 42, 42, 0.705);
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    width: 75px;
+    height: 75px;
+    background-color: rgba(165, 42, 42, 0.822);
+}
+button:active{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(165, 42, 42);
+
 }
